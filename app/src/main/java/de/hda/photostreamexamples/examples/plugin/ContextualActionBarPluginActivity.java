@@ -60,7 +60,7 @@ public class ContextualActionBarPluginActivity extends PhotoStreamActivity imple
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.plugin_example);
+        setContentView(R.layout.activity_plugin_example);
 
         // "Mehr Laden" - Button referenzieren
         button = (Button) findViewById(R.id.button);

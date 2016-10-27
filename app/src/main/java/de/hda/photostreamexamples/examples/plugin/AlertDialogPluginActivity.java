@@ -57,7 +57,7 @@ public class AlertDialogPluginActivity extends PhotoStreamActivity implements On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.plugin_example);
+        setContentView(R.layout.activity_plugin_example);
 
         button = (Button) findViewById(R.id.button);
 
