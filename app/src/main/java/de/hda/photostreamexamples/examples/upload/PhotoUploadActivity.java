@@ -62,7 +62,6 @@ public class PhotoUploadActivity extends PhotoStreamActivity implements OnPhotoU
         // Button und EditText referenzieren
         findViews();
 
-        // Beispielphoto
         Uri assetUri = Uri.parse("assets://architecture.png");
 
         // Bitmap laden
