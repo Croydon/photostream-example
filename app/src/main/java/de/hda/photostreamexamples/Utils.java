@@ -28,6 +28,7 @@ import android.content.Context;
 import android.support.v7.app.AlertDialog;
 
 import hochschuledarmstadt.photostream_tools.model.HttpError;
+import hochschuledarmstadt.photostream_tools.model.Photo;
 
 public class Utils {
 

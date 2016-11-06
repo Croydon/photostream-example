@@ -29,6 +29,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
 
+import de.hda.photostreamexamples.Utils;
 import hochschuledarmstadt.photostream_tools.IPhotoStreamClient;
 import hochschuledarmstadt.photostream_tools.model.Photo;
 
@@ -39,9 +40,11 @@ public class NotificationBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         if (isNewPhotoIntent(intent)){
-            // Das empfangene Photo aus dem Intent referenzieren (ist in diesem Beispiel aber nicht vorhanden)
+            // Das empfangene Photo aus dem Intent referenzieren (in diesem Beispiel ein Fake Photo)
             Photo receivedPhoto = intent.getParcelableExtra(IPhotoStreamClient.INTENT_KEY_PHOTO);
-            Toast.makeText(context, "Intent erhalten im BroadcastReceiver!", Toast.LENGTH_SHORT).show();
+            String message = "ID des Photos: %s\nBeschreibung: %s\nPfad zur Bilddatei: %s";
+            message = String.format(message, receivedPhoto.getId(), receivedPhoto.getDescription(), receivedPhoto.getImageFilePath());
+            Toast.makeText(context, message, Toast.LENGTH_LONG).show();
         }
     }
 
