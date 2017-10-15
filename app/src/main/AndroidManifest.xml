@@ -10,7 +10,7 @@
         <!-- URL festlegen für den Photostream Server -->
         <meta-data
             android:name="PHOTOSTREAM_URL"
-            android:value="http://141.100.70.48:8082" />
+            android:value="http://141.100.70.65:8082" />
 
         <!-- Größe festlegen für eine Seite aus dem Photostream -->
         <meta-data
